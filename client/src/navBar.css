@@ -22,19 +22,23 @@ body {
 
 .main-nav__item {
   font-size: 16px;
+  display: block;
+  margin: 10px;
 }
 
 .main-nav__items a {
   text-decoration: none;
-  display: block;
   color: white;
   padding: 15px 5px;
   margin: 0px;
 }
 
+.main-brand {
+  display: inline-block;
+}
+
 a:hover {
   text-decoration: underline;
-  color: black;
 }
 
 /* Mobile version */
