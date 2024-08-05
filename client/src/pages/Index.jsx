@@ -1,3 +1,9 @@
 export function Index() {
-  return <h1>Hello World</h1>;
+  return (
+    <>
+      <section id="product-overview">
+        <h1>Hello World</h1>
+      </section>
+    </>
+  );
 }

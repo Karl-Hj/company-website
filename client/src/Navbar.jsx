@@ -15,7 +15,7 @@ export function Navbar() {
     <>
       <header className="main-header">
         <nav className="main-nav">
-          <ul className={`main-nav__items ${isActive} ? active : " " `}>
+          <ul className="main-nav__items">
             <li className="main-brand">
               <Link to="/index">RezData</Link>
             </li>
@@ -34,7 +34,6 @@ export function Navbar() {
           </ul>
         </nav>
       </header>
-
       <div className="container">
         <Outlet />
       </div>
