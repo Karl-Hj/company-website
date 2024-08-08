@@ -1,11 +1,35 @@
 .card-container {
   display: flex;
   justify-content: center;
-  color: white;
 }
 
 .card {
-  height: 300px;
-  width: 500px;
+  width: 400px;
   background: black;
+}
+
+.card-header {
+  background: #f1f1f1;
+  padding: 20px;
+  text-align: start;
+  padding-left: 10px;
+  display: flex;
+  flex: 1;
+}
+
+.card-header p {
+  flex: 1;
+  text-align: end;
+}
+
+.card-body {
+  padding: 10px;
+  background: #ccc;
+  text-align: start;
+}
+
+.card-footer {
+  padding: 10px;
+  background: #616161;
+  text-align: center;
 }
