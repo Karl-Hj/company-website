@@ -4,22 +4,23 @@
 }
 
 .card {
-  width: 400px;
-  background: black;
+  width: 200px;
+  height: 100%;
 }
 
+/* Mobile version */
 .card-header {
   background: #f1f1f1;
-  padding: 20px;
+  padding: 10px;
   text-align: start;
   padding-left: 10px;
   display: flex;
-  flex: 1;
+  flex-direction: column;
 }
 
 .card-header p {
-  flex: 1;
-  text-align: end;
+  padding-top: 10px;
+  padding-bottom: 0px;
 }
 
 .card-body {
@@ -32,4 +33,21 @@
   padding: 10px;
   background: #616161;
   text-align: center;
+}
+
+@media (min-width: 468px) {
+  .card {
+    width: 400px;
+  }
+  .card-header {
+    flex-direction: row;
+    flex: 1;
+    padding: 10px;
+  }
+  .card-header p {
+    flex: 1;
+    text-align: end;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
