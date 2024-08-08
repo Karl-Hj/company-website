@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
-import "./navBar.css";
+import { Link, Outlet, ScrollRestoration } from "react-router-dom";
+import { Footer } from "./Footer";
 
+import "./navbar-footer.css";
 export function Navbar() {
   const [isActive, setIsActive] = useState(false);
 
@@ -17,13 +18,13 @@ export function Navbar() {
         <nav className="main-nav">
           <ul className="main-nav__items">
             <li className="main-brand">
-              <Link to="/index">RezData</Link>
+              <Link to="home">RezData</Link>
             </li>
             <li className={dropDown}>
-              <Link to="/index">Home</Link>
+              <Link to="home">Home</Link>
             </li>
             <li className={dropDown}>
-              <Link to="/index">Employees</Link>
+              <Link to="employees">Employees</Link>
             </li>
             <li className={dropDown}>
               <Link to="/index">About</Link>
@@ -34,9 +35,11 @@ export function Navbar() {
           </ul>
         </nav>
       </header>
+      <ScrollRestoration />
       <div className="container">
         <Outlet />
       </div>
+      <Footer />
     </>
   );
 }

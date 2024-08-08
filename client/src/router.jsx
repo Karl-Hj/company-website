@@ -1,10 +1,16 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import { Navbar } from "./Navbar";
-import { Index } from "./pages/Index.jsx";
+import { Home } from "./pages/Home";
+import { Employees } from "./pages/Employees";
+
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Navbar />,
-    children: [{ index: true, element: <Index /> }],
+    children: [
+      { index: true, element: <Navigate to="/home" /> },
+      { path: "home", element: <Home /> },
+      { path: "employees", element: <Employees /> },
+    ],
   },
 ]);

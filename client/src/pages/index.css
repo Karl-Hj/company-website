@@ -1,23 +1,112 @@
-body {
-  height: 200vh;
-  margin: 0px;
-}
-
-/* Mobile version */
-#product-overview {
-  background: url("./iTest1.jpg") no-repeat center / cover;
+#section-container {
   height: 100vh;
   width: 100%;
   margin-top: 38px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Mobile version */
+.main-tagline {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(211, 211, 239);
+  text-align: center;
+  font-size: 3em;
+  max-width: 75%;
+  margin: auto;
+}
+
+.company-overview {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 80%;
+  border: 2px solid black;
+  padding: 5px;
+  background-color: black;
+  border-radius: 2%;
+  /* max-width: 600px; */
+  margin-bottom: 10px;
+}
+
+.company-overview p {
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.company-office__picture img {
+  width: 100%;
+}
+
+@media (orientation: landscape) {
+  .container {
+    max-height: 700vh;
+  }
+  .main-tagline-container {
+    margin-bottom: 10px;
+  }
+  .company-container {
+    margin-bottom: 10px;
+  }
+  .main-footer {
+    margin-top: -10px;
+  }
+  .main-tagline {
+    font-size: 2rem;
+    padding-top: 0px;
+    justify-content: center;
+    text-align: center;
+  }
+  @media (min-width: 800px) {
+    .main-tagline {
+      font-size: 4em;
+    }
+  }
 }
 
 /* Tablet version */
-@media all and (min-width: 468px) {
+@media (min-width: 800px) {
+  .company-overview {
+    flex-direction: row;
+    max-width: 800px;
+  }
+
+  .company-overview img {
+    margin-right: 10px;
+    height: 300px;
+    width: 400px;
+  }
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 801px) {
+  .main-tagline {
+    font-size: 6em;
+  }
   #product-overview {
     margin-top: 58px;
+  }
+  .company-overview {
+    flex-direction: row;
+    max-width: 45%;
+    min-width: 800px;
+  }
+  .company-overview img {
+    margin-right: 10px;
+    height: 320px;
+    width: 480px;
   }
 }
