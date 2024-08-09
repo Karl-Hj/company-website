@@ -27,7 +27,7 @@ export function Navbar() {
               <Link to="employees">Employees</Link>
             </li>
             <li className={dropDown}>
-              <Link to="/index">About</Link>
+              <Link to="/about">About</Link>
             </li>
             <li className="main-nav__toggle" onClick={toggle}>
               <span className="main-nav__bars"></span>
