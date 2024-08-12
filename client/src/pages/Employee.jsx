@@ -25,7 +25,7 @@ export function Employee() {
           return (
             <main className="comment-main" key={comment.id}>
               <div className="comment-email">
-                <Link className="comment-email__link"> test</Link>
+                <Link className="comment-email__link"></Link>
                 <button className="button-edit">
                   <Link>Edit</Link>
                 </button>
