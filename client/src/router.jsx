@@ -4,6 +4,8 @@ import { Home } from "./pages/Home";
 import { Employees, loader as employeesLoader } from "./pages/Employees";
 import { About } from "./pages/About";
 import { Employee, loader as employeeLoader } from "./pages/Employee";
+import { EditComment } from "./pages/EditComment";
+import { AddComment } from "./pages/AddComment";
 
 export const router = createBrowserRouter([
   {
@@ -27,6 +29,14 @@ export const router = createBrowserRouter([
                 index: true,
                 loader: employeeLoader,
                 element: <Employee />,
+              },
+              {
+                path: "edit",
+                element: <EditComment />,
+              },
+              {
+                path: "add",
+                element: <AddComment />,
               },
             ],
           },

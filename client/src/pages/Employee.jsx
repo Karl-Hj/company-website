@@ -1,11 +1,11 @@
-import { Link, useLoaderData } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 import { getEmployee } from "../api/employees";
 import "./employee.css";
 import { getComments } from "../api/comments";
 
 export function Employee() {
   const { employee, comments } = useLoaderData();
-  console.log(comments);
+  const { employeeId } = useParams();
 
   return (
     <>
@@ -20,7 +20,7 @@ export function Employee() {
       <section className="comment-container">
         <h2>Comments</h2>
         <button className="button-add">
-          <Link>Add comment</Link>
+          <Link to={`/employees/${employeeId}/add`}>Add comment</Link>
         </button>
         {comments.map((comment) => {
           return (
@@ -33,7 +33,7 @@ export function Employee() {
                   {comment.email}
                 </Link>
                 <button className="button-edit">
-                  <Link>Edit</Link>
+                  <Link to={`/employees/${comment.id}/edit`}>Edit</Link>
                 </button>
               </div>
               <div className="comment-title">{comment.title}</div>
