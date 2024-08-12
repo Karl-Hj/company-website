@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { getEmployees } from "../api/employees";
 import "./employees.css";
 
@@ -18,7 +18,11 @@ export function Employees() {
               <div className="card-body">
                 <div className="card-email">{employee.email}</div>
               </div>
-              <div className="card-footer">Comments</div>
+              <div className="card-footer">
+                <Link to={`/employees/${employee.id}`}>
+                  Information / Comments
+                </Link>
+              </div>
             </div>
           );
         })}

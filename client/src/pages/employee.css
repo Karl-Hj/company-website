@@ -1,0 +1,116 @@
+/* Mobile version */
+
+/* Employee */
+.employee-container {
+  /* position: absolute; */
+  display: flex;
+  top: 80px;
+  justify-content: center;
+}
+
+.employee-main {
+  background: #f1f1f1;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 305px;
+}
+
+.employee-name {
+  flex-direction: column;
+  padding: 20px;
+  text-align: start;
+  font-size: 2rem;
+}
+
+.employee-name p {
+  margin-top: 5px;
+}
+
+.employee-email {
+  text-align: start;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+/* Comments */
+.comment-container {
+  display: flex;
+  text-align: start;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  min-width: 305px;
+  max-width: 700px;
+}
+.comment-container h2 {
+  font-size: 3rem;
+  position: relative;
+  color: white;
+  margin-top: 50px;
+  display: inline-block;
+}
+
+.button-add {
+  width: 100px;
+  height: 40px;
+  font-size: 0.9rem;
+}
+.button-add a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.comment-main {
+  background: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 4px black;
+}
+
+.comment-email {
+  display: flex;
+  padding: 5px;
+  /* margin-left: 5px; */
+  text-align: start;
+  justify-content: flex-start;
+}
+
+.button-edit {
+  padding: 2px;
+  width: 40px;
+  height: 40px;
+}
+
+.comment-title {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+.comment-body {
+  text-align: start;
+  padding: 10px;
+}
+
+/* Tablet */
+
+@media (min-width: 800px) and (orientation: portrait) {
+  .employee-container {
+    position: absolute;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .comment-container {
+    max-width: 1000px;
+    text-align: start;
+  }
+}
