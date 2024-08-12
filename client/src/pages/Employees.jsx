@@ -4,7 +4,6 @@ import "./employees.css";
 
 export function Employees() {
   const employees = useLoaderData();
-  console.log(employees);
 
   return (
     <>
