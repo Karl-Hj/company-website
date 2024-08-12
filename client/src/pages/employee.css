@@ -2,9 +2,9 @@
 
 /* Employee */
 .employee-container {
-  /* position: absolute; */
+  position: relative;
   display: flex;
-  top: 80px;
+  top: 50px;
   justify-content: center;
 }
 
@@ -14,6 +14,7 @@
   display: flex;
   flex-wrap: wrap;
   min-width: 305px;
+  margin-top: 20px;
 }
 
 .employee-name {
@@ -69,22 +70,32 @@
   background: white;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 100%;
   border: 4px black;
 }
 
 .comment-email {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 5px;
-  /* margin-left: 5px; */
+}
+
+.comment-email__link {
   text-align: start;
-  justify-content: flex-start;
 }
 
 .button-edit {
   padding: 2px;
   width: 40px;
   height: 40px;
+}
+
+.button-edit a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .comment-title {
