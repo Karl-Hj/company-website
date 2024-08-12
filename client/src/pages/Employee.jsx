@@ -2,6 +2,7 @@ import { Link, useLoaderData } from "react-router-dom";
 import { getEmployee } from "../api/employees";
 import "./employee.css";
 import { getComments } from "../api/comments";
+
 export function Employee() {
   const { employee, comments } = useLoaderData();
   console.log(comments);
@@ -25,7 +26,12 @@ export function Employee() {
           return (
             <main className="comment-main" key={comment.id}>
               <div className="comment-email">
-                <Link className="comment-email__link"></Link>
+                <Link
+                  className="comment-email__link"
+                  to={`/employees/${comment.userId}`}
+                >
+                  {comment.email}
+                </Link>
                 <button className="button-edit">
                   <Link>Edit</Link>
                 </button>

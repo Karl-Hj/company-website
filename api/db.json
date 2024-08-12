@@ -108,6 +108,7 @@
       "id": 1,
       "userId": 2,
       "employeeId": 1,
+      "email": "janesmith@example.com",
       "title": "Great team player",
       "body": "John is always willing to help his teammates and contributes positively to team discussions."
     },
@@ -115,6 +116,7 @@
       "id": 2,
       "userId": 3,
       "employeeId": 1,
+      "email": "michaeljohnson@example.com",
       "title": "Excellent coder",
       "body": "John writes clean, efficient code and is always on top of the latest technologies."
     },
@@ -122,6 +124,7 @@
       "id": 3,
       "userId": 4,
       "employeeId": 1,
+      "email": "emilydavis@example.com",
       "title": "Quick learner",
       "body": "He adapts quickly to new challenges and is a fast learner."
     },
@@ -129,6 +132,7 @@
       "id": 4,
       "userId": 1,
       "employeeId": 2,
+      "email": "johndoe@example.com",
       "title": "Strong leadership",
       "body": "Jane has demonstrated strong leadership skills, guiding her team to success."
     },
@@ -136,6 +140,7 @@
       "id": 5,
       "userId": 5,
       "employeeId": 2,
+      "email": "jamesbrown@example.com",
       "title": "Good decision making",
       "body": "She makes well-informed decisions that benefit the company."
     },
@@ -143,6 +148,7 @@
       "id": 6,
       "userId": 6,
       "employeeId": 2,
+      "email": "patriciataylor@example.com",
       "title": "Innovative ideas",
       "body": "Jane is always full of innovative ideas that drive the project forward."
     },
@@ -150,6 +156,7 @@
       "id": 7,
       "userId": 7,
       "employeeId": 3,
+      "email": "robertmiller@example.com",
       "title": "Creative designs",
       "body": "Michael's designs are both creative and user-friendly."
     },
@@ -157,6 +164,7 @@
       "id": 8,
       "userId": 8,
       "employeeId": 3,
+      "email": "lindawilson@example.com",
       "title": "Attention to detail",
       "body": "He pays attention to even the smallest details, ensuring a flawless product."
     },
@@ -164,6 +172,7 @@
       "id": 9,
       "userId": 9,
       "employeeId": 3,
+      "email": "davidmoore@example.com",
       "title": "User-focused",
       "body": "Michael always keeps the user's needs in mind while designing."
     },
@@ -171,6 +180,7 @@
       "id": 10,
       "userId": 10,
       "employeeId": 4,
+      "email": "barbaraclark@example.com",
       "title": "Data-driven",
       "body": "Emily bases her decisions on solid data analysis, leading to more accurate outcomes."
     },
@@ -178,6 +188,7 @@
       "id": 11,
       "userId": 11,
       "employeeId": 4,
+      "email": "christopherlewis@example.com",
       "title": "Analytical thinker",
       "body": "She has an analytical mindset that is crucial for our data projects."
     },
@@ -185,6 +196,7 @@
       "id": 12,
       "userId": 12,
       "employeeId": 5,
+      "email": "susanyoung@example.com",
       "title": "Strategic mindset",
       "body": "James always thinks ahead and plans strategically."
     },
@@ -192,6 +204,7 @@
       "id": 13,
       "userId": 13,
       "employeeId": 5,
+      "email": "josephallen@example.com",
       "title": "Great communication",
       "body": "He communicates effectively with both his team and clients."
     },
@@ -199,6 +212,7 @@
       "id": 14,
       "userId": 14,
       "employeeId": 6,
+      "email": "sarahscott@example.com",
       "title": "People person",
       "body": "Patricia is great with people and manages employee relations with ease."
     },
@@ -206,6 +220,7 @@
       "id": 15,
       "userId": 15,
       "employeeId": 6,
+      "email": "thomasking@example.com",
       "title": "Organizational skills",
       "body": "She keeps the HR department organized and efficient."
     },
@@ -213,6 +228,7 @@
       "id": 16,
       "userId": 16,
       "employeeId": 7,
+      "email": "karenharris@example.com",
       "title": "Sales expertise",
       "body": "Robert's expertise in sales is unmatched in the company."
     },
@@ -220,6 +236,7 @@
       "id": 17,
       "userId": 17,
       "employeeId": 7,
+      "email": "pauljackson@example.com",
       "title": "Client-focused",
       "body": "He always puts the client first and works hard to meet their needs."
     },
@@ -227,6 +244,7 @@
       "id": 18,
       "userId": 8,
       "employeeId": 8,
+      "email": "lindawilson@example.com",
       "title": "Financial acumen",
       "body": "Linda has a strong understanding of financial analysis and budgeting."
     },
@@ -234,6 +252,7 @@
       "id": 19,
       "userId": 9,
       "employeeId": 8,
+      "email": "davidmoore@example.com",
       "title": "Attention to detail",
       "body": "Her attention to detail ensures that no errors slip through the cracks."
     },
@@ -241,6 +260,7 @@
       "id": 20,
       "userId": 10,
       "employeeId": 9,
+      "email": "barbaraclark@example.com",
       "title": "Systematic approach",
       "body": "David approaches problems systematically and finds efficient solutions."
     },
@@ -248,6 +268,7 @@
       "id": 21,
       "userId": 11,
       "employeeId": 9,
+      "email": "christopherlewis@example.com",
       "title": "Proactive",
       "body": "He is always proactive, anticipating and addressing issues before they arise."
     },
@@ -255,6 +276,7 @@
       "id": 22,
       "userId": 12,
       "employeeId": 10,
+      "email": "susanyoung@example.com",
       "title": "Detail-oriented",
       "body": "Barbara's work is meticulous, and she ensures everything is thoroughly checked."
     },
@@ -262,6 +284,7 @@
       "id": 23,
       "userId": 13,
       "employeeId": 10,
+      "email": "josephallen@example.com",
       "title": "Problem solver",
       "body": "She excels at finding solutions to complex problems."
     },
@@ -269,6 +292,7 @@
       "id": 24,
       "userId": 14,
       "employeeId": 11,
+      "email": "sarahscott@example.com",
       "title": "Creative writer",
       "body": "Christopher's writing is creative and engaging, capturing the audience's attention."
     },
@@ -276,6 +300,7 @@
       "id": 25,
       "userId": 15,
       "employeeId": 11,
+      "email": "thomasking@example.com",
       "title": "Content specialist",
       "body": "He has a deep understanding of content strategy and creation."
     },
@@ -283,6 +308,7 @@
       "id": 26,
       "userId": 16,
       "employeeId": 12,
+      "email": "karenharris@example.com",
       "title": "Customer-focused",
       "body": "Susan always puts the customer first and resolves their issues quickly."
     },
@@ -290,6 +316,7 @@
       "id": 27,
       "userId": 17,
       "employeeId": 12,
+      "email": "pauljackson@example.com",
       "title": "Tech-savvy",
       "body": "She is highly knowledgeable about the latest tech support trends."
     },
@@ -297,6 +324,7 @@
       "id": 28,
       "userId": 1,
       "employeeId": 13,
+      "email": "johndoe@example.com",
       "title": "Organized",
       "body": "Joseph is extremely organized, keeping projects on track."
     },
@@ -304,6 +332,7 @@
       "id": 29,
       "userId": 2,
       "employeeId": 13,
+      "email": "janesmith@example.com",
       "title": "Efficient coordinator",
       "body": "He coordinates projects efficiently, ensuring everything runs smoothly."
     },
@@ -311,6 +340,7 @@
       "id": 30,
       "userId": 3,
       "employeeId": 14,
+      "email": "michaeljohnson@example.com",
       "title": "Financial expertise",
       "body": "Sarah has extensive expertise in accounting and finance."
     },
@@ -318,6 +348,7 @@
       "id": 31,
       "userId": 4,
       "employeeId": 14,
+      "email": "emilydavis@example.com",
       "title": "Detail-oriented",
       "body": "She is meticulous in her financial reviews and reports."
     },
@@ -325,6 +356,7 @@
       "id": 32,
       "userId": 5,
       "employeeId": 15,
+      "email": "thomasking@example.com",
       "title": "Analytical",
       "body": "Thomas has strong analytical skills that aid in business analysis."
     },
@@ -332,6 +364,7 @@
       "id": 33,
       "userId": 6,
       "employeeId": 15,
+      "email": "patriciataylor@example.com",
       "title": "Problem solver",
       "body": "He quickly identifies and resolves business issues."
     },
@@ -339,6 +372,7 @@
       "id": 34,
       "userId": 7,
       "employeeId": 16,
+      "email": "karenharris@example.com",
       "title": "Operational excellence",
       "body": "Karen ensures that operations are running smoothly and efficiently."
     },
@@ -346,6 +380,7 @@
       "id": 35,
       "userId": 8,
       "employeeId": 16,
+      "email": "lindawilson@example.com",
       "title": "Leadership",
       "body": "She has shown great leadership in managing the operations team."
     },
@@ -353,6 +388,7 @@
       "id": 36,
       "userId": 9,
       "employeeId": 17,
+      "email": "davidmoore@example.com",
       "title": "Networking expert",
       "body": "Paul is an expert in networking, ensuring our infrastructure is secure."
     }
