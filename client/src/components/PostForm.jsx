@@ -1,8 +1,14 @@
 import { Form, Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./form.css";
+import { FormGroup } from "./FormGroup";
 
-export function PostForm({ employees, employeeId, defaultValues = {} }) {
+export function PostForm({
+  employees,
+  employeeId,
+  defaultValues = {},
+  errors = {},
+}) {
   return (
     <>
       <Form method="post" className="form">
@@ -17,15 +23,19 @@ export function PostForm({ employees, employeeId, defaultValues = {} }) {
           Cancel
         </Link>
         <div className="form-row">
-          <label htmlFor="title">Title</label>
-          <input
-            type="text"
-            name="title"
-            id="title"
-            defaultValue={defaultValues.title}
-          />
-          <label htmlFor="body">Body</label>
-          <textarea name="body" id="body" defaultValue={defaultValues.body} />
+          <FormGroup className="form-group" errorMessage={errors.title}>
+            <label htmlFor="title">Title</label>
+            <input
+              type="text"
+              name="title"
+              id="title"
+              defaultValue={defaultValues.title}
+            />
+          </FormGroup>
+          <FormGroup className="form-group" errorMessage={errors.body}>
+            <label htmlFor="body">Body</label>
+            <textarea name="body" id="body" defaultValue={defaultValues.body} />
+          </FormGroup>
           <label htmlFor="userId">Author</label>
           <select name="userId" id="userId" defaultValue={defaultValues.userId}>
             {employees.map((employee) => {
@@ -46,21 +56,33 @@ export function PostForm({ employees, employeeId, defaultValues = {} }) {
 PostForm.propTypes = {
   employees: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string,
-      name: PropTypes.string,
-      email: PropTypes.string,
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      name: PropTypes.string.isRequired,
+      email: PropTypes.string.isRequired,
     })
   ).isRequired,
-};
-PostForm.propTypes = {
-  employeeId: PropTypes.string,
-};
-
-PostForm.propTypes = {
+  employeeId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   defaultValues: PropTypes.shape({
     employeeId: PropTypes.number,
     userId: PropTypes.number,
     title: PropTypes.string,
     body: PropTypes.string,
   }),
+  errors: PropTypes.shape({
+    title: PropTypes.string,
+    body: PropTypes.string,
+  }),
 };
+
+export function postFormValidator({ title, body }) {
+  const errors = {};
+
+  if (title === "") {
+    errors.title = "Required";
+  }
+  if (body === "") {
+    errors.body = "Required";
+  }
+
+  return errors;
+}

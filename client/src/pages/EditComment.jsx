@@ -1,15 +1,15 @@
-import { redirect, useLoaderData } from "react-router-dom";
+import { redirect, useActionData, useLoaderData } from "react-router-dom";
 import { getEmployees } from "../api/employees";
-import { PostForm } from "../components/PostForm";
+import { PostForm, postFormValidator } from "../components/PostForm";
 import { getComment, updateComment } from "../api/comments";
 
 export function EditComment() {
   const { employees, comment } = useLoaderData();
-  console.log(comment);
+  const errors = useActionData();
 
   return (
     <>
-      <PostForm employees={employees} defaultValues={comment} />
+      <PostForm employees={employees} defaultValues={comment} errors={errors} />
     </>
   );
 }
@@ -25,6 +25,12 @@ export async function action({ request, params: { employeeId } }) {
   const title = formData.get("title");
   const body = formData.get("body");
   const userId = formData.get("userId");
+
+  const errors = postFormValidator({ title, body });
+
+  if (Object.keys(errors).length > 0) {
+    return errors;
+  }
 
   const employees = await getEmployees();
   const employee = employees.find((emp) => emp.id === userId);
