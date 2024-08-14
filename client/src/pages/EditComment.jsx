@@ -1,7 +1,9 @@
+import { PostForm } from "../components/PostForm";
+
 export function EditComment() {
   return (
     <>
-      <h2>Hello World!</h2>
+      <PostForm />
     </>
   );
 }

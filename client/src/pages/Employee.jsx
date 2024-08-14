@@ -46,9 +46,9 @@ export function Employee() {
   );
 }
 
-export async function loader({ request: { signal }, params: { employeeId } }) {
-  const employee = await getEmployee(employeeId, { signal });
-  const comments = await getComments(employeeId, { signal });
+export async function loader({ request: { signal }, params }) {
+  const employee = await getEmployee(params.employeeId, { signal });
+  const comments = await getComments(params.employeeId, { signal });
 
   return { employee, comments };
 }

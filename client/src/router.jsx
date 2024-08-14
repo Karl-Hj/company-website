@@ -5,7 +5,11 @@ import { Employees, loader as employeesLoader } from "./pages/Employees";
 import { About } from "./pages/About";
 import { Employee, loader as employeeLoader } from "./pages/Employee";
 import { EditComment } from "./pages/EditComment";
-import { AddComment } from "./pages/AddComment";
+import {
+  AddComment,
+  loader as addLoader,
+  action as addAction,
+} from "./pages/AddComment";
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +40,8 @@ export const router = createBrowserRouter([
               },
               {
                 path: "add",
+                loader: addLoader,
+                action: addAction,
                 element: <AddComment />,
               },
             ],
