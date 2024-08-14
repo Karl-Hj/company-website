@@ -105,12 +105,12 @@
   ],
   "comments": [
     {
-      "title": "t1",
-      "body": "t1",
+      "id": "1",
       "userId": 2,
       "employeeId": 1,
       "email": "janesmith@example.com",
-      "id": "1"
+      "title": "Great team player",
+      "body": "John is always willing to help his teammates and contributes positively to team discussions."
     },
     {
       "id": "2",
@@ -391,22 +391,6 @@
       "email": "davidmoore@example.com",
       "title": "Networking expert",
       "body": "Paul is an expert in networking, ensuring our infrastructure is secure."
-    },
-    {
-      "id": "c3581c85-e68f-4dcc-b04e-6f352772bee9",
-      "title": "tet",
-      "body": "tet",
-      "userId": 3,
-      "email": "michaeljohnson@example.com",
-      "employeeId": 1
-    },
-    {
-      "id": "7eac0cd9-bae2-45b7-adc0-cee7e0678c52",
-      "title": "yr",
-      "body": "yrd",
-      "userId": 1,
-      "email": "johndoe@example.com",
-      "employeeId": 10
     }
   ]
 }
