@@ -3,9 +3,10 @@
   margin-bottom: 20px;
   height: 100%;
   width: 80%;
-  background: rgb(143, 187, 241);
+  background: rgba(138, 182, 232, 0.701);
   padding: 20px;
   min-width: 330px;
+  box-shadow: 5px 5px 5px rgb(33, 33, 61);
 }
 
 .background-sheet p {
