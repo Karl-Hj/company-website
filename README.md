@@ -1,0 +1,1 @@
+This is a small project to demonstrate API handling with JSON Server. To run the project, navigate to the api folder and run npm run dev to start the JSON Server. Then, navigate to the client folder and run npm run dev to start the website.
